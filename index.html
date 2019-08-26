@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ad Astra - Movie</title>
+  <meta name="description" content="Movie Website - Ad Astra">
+  <meta name="author" content="Laura Hundersmarck">
+  <link rel="stylesheet" href="css/stylereset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300i, 300,400,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <script>src="https://kit.fontawesome.com/d7c1e28c2f.js"</script>
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <div class="studio-logo">
+        <p>
+          <span class="logo-accent">Cinema</span> Studios
+        </p>
+      </div>
+      <ul class="menu">
+        <li><a href="#"><img src="search.svg"></img></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tickets">Find Tickets</a></li>
+        <li><a href="#trailer">Trailer</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="trailer">
+      <img class="trailer" src="trailer.jpg"></img>
+      <img class="play" src="play.svg"></img>
+    </div>
+    <div class="tickets" id="tickets">
+      <div class="find-tickets-container">
+      <div class="find-tickets">
+        <h2>Find Tickets</h2>
+        <div class="search-tickets">
+          <form>
+            <input type="text" id="zip-code" placeholder="Enter your zip code">
+          </form>
+          <button onclick="showTickets()">Search</button>
+        </div>
+      </div>
+      </div>
+      <div class="ticket-results hidden">
+        <div class="ticket-results-header">
+          <h3>Theaters near <span>98101</span></h3>
+          <p>Movie times for <span>September 20, 2019</span></p>
+        </div>
+        <div class="ticket-results-list">
+          <div class="ticket-result-1">
+            <h4>Regal Riverview Plaza</h4>
+            <p>140 Martin Luther King Blvd,</br>
+              Seattle, WA 98101</br>
+              <span class="result-info">Reserved seating | Closed caption | Accessibility devices</span>
+            </p>
+            <div class="buttons-container">
+              <button>12:30pm</button>
+              <button>2:30pm</button>
+              <button>7:10pm</button>
+              <button disabled>9:20pm</button>
+            </div>
+          </div>
+          <div class="ticket-result-2">
+              <h4>Regal Riverview Plaza</h4>
+              <p>140 Martin Luther King Blvd,</br>
+                Seattle, WA 98101</br>
+                <span class="result-info">Reserved seating | Closed caption | Accessibility devices</span>
+              </p>
+              <div class="buttons-container">
+                  <button>12:30pm</button>
+                  <button>2:30pm</button>
+                  <button disabled>7:10pm</button>
+                  <button>9:20pm</button>
+                </div>
+          </div>
+          <div class="ticket-result-3">
+              <h4>Regal Riverview Plaza</h4>
+              <p>140 Martin Luther King Blvd,</br>
+                Seattle, WA 98101</br>
+                <span class="result-info">Reserved seating | Closed caption | Accessibility devices</span>
+              </p>
+              <div class="buttons-container">
+                  <button disabled>12:30pm</button>
+                  <button>2:30pm</button>
+                  <button>7:10pm</button>
+                  <button>9:20pm</button>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="movie-details" id="about">
+      <div class="movie-details-container">
+      <div class="text-details">
+        <h1>Ad Astra</h1>
+        <h3>In Theatres September 20</h3>
+        <p>Astronaut Roy McBride (Brad Pitt) travels to the outer edges of the solar system to find his missing father and unravel a mystery that threatens the survival of our planet. His journey will uncover secrets that challenge the nature of human existence and our place in the cosmos.</p>
+        <p class="movie-length">Length: 124 min</p>
+        <p class="detail"><span class="detail-accent">Cast:</span> Brad Pitt, Tommy Lee Jones, Ruth Negga, Liv Tyler, and Donald Sutherland</p>
+        <p class="detail"><span class="detail-accent">Director:</span> James Gray</p>
+        <p class="detail"><span class="detail-accent">Writers:</span> James Gray & Ethan Gross</p>
+        <p class="detail"><span class="detail-accent">Producers:</span> Brad Pitt, Dede Gardner, p.g.a., Jeremy Kleiner, p.g.a., James Gray, p.g.a., Anthony Katagas, p.g.a., Rodrigo Teixeira, p.g.a., Arnon Milchan</p>
+        <p class="detail"><span class="detail-accent">Rating:</span> PG13</p>
+      </div>
+      <div class="poster">
+        <img src="poster.jpg">
+      </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="heading-container">
+        <h4>Gallery</h4>
+      </div>
+      <div class="extras-container">
+        <div class="extra-1">
+            <iframe src="https://www.youtube.com/embed/nxi6rtBtBM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="extra-2">
+            <iframe src="https://www.youtube.com/embed/2__aaBehE78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="extra-3">
+            <iframe src="https://www.youtube.com/embed/mVk4URE1UQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+      <div class="connect-container">
+      <div class="connect">
+        <h4>Connect with us</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      </div>
+      <ul class="links">
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+  <script>
+    var isShowingResults = false;
+    function showTickets() {
+      isShowingResults = !isShowingResults;
+      const results = document.getElementsByClassName("ticket-results")[0];
+      results.classList.toggle("hidden");
+      const findTickets = document.getElementsByClassName("find-tickets-container")[0];
+      findTickets.classList.toggle("height30");
+      const grid = document.getElementById("container");
+      if (isShowingResults) {
+        grid.style.gridTemplateRows = "0.2fr 3fr 3fr 4fr 2fr 1fr";
+      } else {
+        grid.style.gridTemplateRows = "0.2fr 3fr 1.5fr 4fr 2fr 1fr";
+      }
+    }
+  </script>
+</body>
+</html>
